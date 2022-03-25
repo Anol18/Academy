@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+
+html
+  head
+    title Anol's Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul 
+            div#logo
+              img(src="../static/logo.png", alt="Logo")
+              | ADA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+        //- div 
+        //-   a(href="http://www.facebook.com" target="_blank")   
+        //-     img(src="../static/fb.png", alt="Faebook" Class='logo' id='fb')
+        //-   a(href="http://www.linkedin.com" target="_blank")  
+        //-     img(src="../static/ln.png", alt="Linkdin" Class="logo" id='ln')
+    section#introSection 
+        div Welcome to Anol's Dance Academy 
+        div.small Follow your Passion. Your Passion is our pride!
+    section#mission 
+        h2 Our Mission 
+        div.card 
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="../static/1.png", alt="dance logo")
+                div.card-content
+                    p This is the best Dance academy in entair world
+        div.card 
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="../static/2.png", alt="dance logo")
+                div.card-content
+                    p This is the best Dance academy in entair world
+        div.card 
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="../static/3.png", alt="dance logo")
+                div.card-content
+                    p This is the best Dance academy in entair world
+    section#sponsorsSection 
+        h2 Our Sponsors
+        div#sponsor
+          img(src="../static/apple.png", alt="Sponsors Logo" Class="spimg")
+          img(src="../static/hp.png", alt="Sponsors Logo" Class="spimg")   
+          img(src="../static/skype.png", alt="Sponsors Logo" Class="spimg")
+          img(src="../static/micro.png", alt="Sponsors Logo" Class="spimg")
+    
+    footer#footer 
+        | Copyright © 2021 Anal Sarkar Dipta | All rights reserved
+    script
+      include ../static/index.js
